@@ -25,4 +25,4 @@ print(mult_df.head())
 
 sns.scatterplot('C', 'D', data=mult_df)
 plt.title('Example Scatter Plot')
-plt.show(block=True)
+plt.show()
