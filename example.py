@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+'''
+@author Mike Swirsky
+'''
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
