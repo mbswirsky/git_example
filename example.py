@@ -31,4 +31,4 @@ print(mult_df.head())
 
 sns.scatterplot('C', 'D', data=mult_df)
 plt.title('Example Scatter Plot - Mult DF')
-plt.show()
+plt.show() 
