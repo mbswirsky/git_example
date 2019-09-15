@@ -22,13 +22,13 @@ df['D'] = df['A'] * df['B']
 # Doing some math
 
 log_df = np.log(df)
-# mult_df = log_df * 2
+mult_df = log_df * 5
 
 # Printing output
 
-print('log_df')
-print(log_df.head())
+print('mult_df')
+print(mult_df.head())
 
-sns.scatterplot('C', 'D', data=log_df)
-plt.title('Example Scatter Plot')
+sns.scatterplot('C', 'D', data=mult_df)
+plt.title('Example Scatter Plot - Mult DF')
 plt.show()
