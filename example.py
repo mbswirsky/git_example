@@ -29,6 +29,12 @@ log_df = np.log(df)
 print('log_df')
 print(log_df.head())
 
+<<<<<<< HEAD
 sns.scatterplot('C', 'D', data=log_df)
 plt.title('Example Scatter Plot')
 plt.show()
+=======
+sns.scatterplot('C', 'D', data=mult_df)
+plt.title('Example Scatter Plot - Mult DF')
+plt.show() 
+>>>>>>> test
