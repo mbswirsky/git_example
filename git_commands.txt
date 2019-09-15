@@ -1,0 +1,17 @@
+git init
+git add
+git commit -m 'message'
+git push origin master
+
+git checkout -b branch_name		# creates branch and checks out
+git checkout branch_name		# switches branch
+git branch -a
+git branch -d branch_name		# delete local branch
+
+git push origin branch_name
+git push origin --delete branch_name	# delete remote branch
+
+git merge branch_name
+git mergetool
+
+git pull
