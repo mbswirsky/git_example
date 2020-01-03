@@ -9,7 +9,7 @@ git push origin master
 COMMITS
 
 git reset HEAD file.name		# removing a file from a commit
-git log
+git log --oneline -3 --graph		# one-line output, only 3 results, showing branches graphically
 git checkout c0mMiThAsH
 
 BRANCHES
