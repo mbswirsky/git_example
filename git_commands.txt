@@ -19,7 +19,7 @@ BRANCHES
 
 git checkout -b branch_name		# creates branch and checks out
 git checkout branch_name		# switches branch
-git branch -a
+git branch -a								# shows all branches including remote
 git branch -d branch_name		# delete local branch
 
 git push origin branch_name
@@ -29,17 +29,17 @@ DIFFING
 
 git diff
 OR
-nbdiff-web HEAD file.name		# compare current version to most recent commit
+nbdiff-web HEAD file.name						# compare current version to most recent commit
 nbdiff-web c0mMiThAsH1 c0mMiThAsH2	# compare two commits
 
 MERGING
 
-git merge branch_name
+git merge branch_name		# make sure you are on branch you want to merge to
 THEN
 git mergetool
 OR
 nbdime mergetool			# opens browser merge tool
-					(base: unchanged, local: branch changes, remote: master changes)
+		# (base: unchanged, local: branch changes, remote: master changes)
 git add then git commit after you've resolved conflicts
 
 NBDIME
