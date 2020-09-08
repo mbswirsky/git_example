@@ -10,35 +10,55 @@ git push origin master
 
 COMMITS
 
-git reset HEAD file.name		# removing a file from a commit
-git log --oneline -3 --graph		# one-line output, only 3 results, showing branches graphically
+# removing a file from a commit
+git reset HEAD file.name
+
+# one-line output, only 3 results, showing branches graphically
+git log --oneline -3 --graph
+
 git checkout c0mMiThAsH
 git checkout c0mMiThAsH -- path/to/file.name
 
 BRANCHES
 
-git checkout -b branch_name		# creates branch and checks out
-git checkout branch_name		# switches branch
-git branch -a								# shows all branches including remote
-git branch -d branch_name		# delete local branch
+# creates branch and checks out
+git checkout -b branch_name
+
+# switches branch
+git checkout branch_name
+
+# shows all branches including remote
+git branch -a
+
+# delete local branch
+git branch -d branch_name
 
 git push origin branch_name
-git push origin --delete branch_name	# delete remote branch
+
+# delete remote branch
+git push origin --delete branch_name
 
 DIFFING
 
 git diff
-OR
-nbdiff-web HEAD file.name						# compare current version to most recent commit
-nbdiff-web c0mMiThAsH1 c0mMiThAsH2	# compare two commits
+
+# compare current version to most recent commit
+nbdiff-web HEAD file.name
+
+# compare two commits
+nbdiff-web c0mMiThAsH1 c0mMiThAsH2
 
 MERGING
 
-git merge branch_name		# make sure you are on branch you want to merge to
-THEN
+# make sure you are on branch you want to merge to
+git merge branch_name
+
+Then if there are conflicts:
+
 git mergetool
 OR
-nbdime mergetool			# opens browser merge tool
+# opens browser merge tool
+nbdime mergetool
 		# (base: unchanged, local: branch changes, remote: master changes)
 git add then git commit after you've resolved conflicts
 
