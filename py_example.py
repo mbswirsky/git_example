@@ -31,4 +31,4 @@ print(log_df.head())
 
 sns.scatterplot('C', 'D', data=mult_df)
 plt.title('Example Scatter Plot - Mult DF')
-plt.show() 
+plt.savefig('plot.png') 
