@@ -22,7 +22,7 @@ df['D'] = df['A'] * df['B']
 # Doing some math
 
 log_df = np.log(df)
-mult_df = log_df * 2
+mult_df = log_df * 3
 
 # Printing output
 
@@ -31,4 +31,4 @@ print(log_df.head())
 
 sns.scatterplot('C', 'D', data=mult_df)
 plt.title('Example Scatter Plot - Mult DF')
-plt.savefig('plot.png') 
+plt.savefig('plot.png')
