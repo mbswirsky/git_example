@@ -22,7 +22,7 @@ df['D'] = df['A'] * df['B']
 # Doing some math
 
 log_df = np.log(df)
-mult_df = log_df * 3
+mult_df = log_df * 4
 
 # Printing output
 
